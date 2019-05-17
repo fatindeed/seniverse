@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.1/phpunit.xsd"
+         bootstrap="./vendor/autoload.php"
+         cacheResult="false">
+  <testsuites>
+    <testsuite name="PHP Client Test Suite for Seniverse API">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+      <directory suffix=".php">src</directory>
+    </whitelist>
+  </filter>
+  <php>
+    <ini name="date.timezone" value="Asia/Shanghai"/>
+    <env name="SENIVERSE_UID" value="U785B76FC9"/>
+    <env name="SENIVERSE_KEY" value="4r9bergjetiv1tsd"/>
+  </php>
+</phpunit>

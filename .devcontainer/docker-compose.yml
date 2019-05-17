@@ -1,0 +1,6 @@
+version: '3'
+services:
+  vscode-remote:
+    image: fatindeed/vscode-remote-php
+    volumes:
+      - ..:/workspace

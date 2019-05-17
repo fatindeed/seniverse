@@ -1,0 +1,37 @@
+{
+    "name": "fatindeed/seniverse-api",
+    "description": "PHP Client for Seniverse API",
+    "type": "library",
+    "keywords": ["seniverse", "weather"],
+    "homepage": "https://github.com/fatindeed/seniverse-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James",
+            "email": "168262+fatindeed@users.noreply.github.com",
+            "homepage": "https://github.com/fatindeed"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SeniverseApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SeniverseApi\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
